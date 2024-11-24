@@ -1,0 +1,133 @@
+﻿<Window x:Class="Мастер_пол.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Мастер_пол"
+        mc:Ignorable="d"
+        Title="Список партнеров" Height="450" Width="800" Icon="/Resources/Мастер пол.ico" Activated="Window_Activated">
+    <!--<Window.Resources>
+        <Style  TargetType="{x:Type  GridViewColumnHeader}">
+            <Setter  Property="HorizontalContentAlignment"  Value="Center" />
+            <Setter  Property="FontWeight"  Value="Bold"/>
+            <Setter  Property="FontSize"  Value="20"/>
+        </Style>
+    </Window.Resources>-->
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Заголовок-->
+        <Grid Grid.Row="0" Background="#FFF4E8D3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resources/Мастер пол.png" Stretch="Fill" />
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0" Text="Список партнеров" VerticalAlignment="Center" FontSize="20" />
+            <Button x:Name="buttonExit" Grid.Column="2" Content="Выход" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" FontSize="20" Click="buttonExit_Click" Background="#FF67BA80" />
+        </Grid>
+       
+        <!--Список в центральной части-->
+        <DataGrid Name="gridPartners"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows ="False" 
+                  Margin="10" GridLinesVisibility="Horizontal" HorizontalAlignment="Stretch" 
+                  HorizontalContentAlignment="Center" SelectionChanged="gridPartners_SelectionChanged">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type  GridViewColumnHeader}">
+                    <Setter  Property="HorizontalContentAlignment"  Value="Center" />
+                    <Setter  Property="FontWeight"  Value="Bold"/>
+                    <Setter  Property="FontSize"  Value="20"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns >
+                <DataGridTemplateColumn Width="2*" Header="Информация о партнере">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Grid.Column="0" Orientation="Vertical">
+                                <TextBlock FontSize="20">
+                                <Run Text="{Binding Path=PartnerType.PartnerTypeName}"/>
+                                <Run Text="|"/>
+                                <Run Text="{Binding Path=PartnerName}"/>
+                                </TextBlock>
+                                <TextBlock FontSize="14" Text="{Binding Path=PartnerDirector, StringFormat=Директор: {0}}"/>
+                                <TextBlock FontSize="14" Text="{Binding Path=PartnerPhone}"/>
+                                <TextBlock FontSize="14" Text="{Binding Path=PartnerRating, StringFormat=Рейтинг: {0}}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Binding="{Binding Path=PartnerDiscount }" Width="*" FontSize="20" Header="Величина скидки"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!--<ListBox Name="listBoxPartners" Grid.Row="1" Margin="10" HorizontalContentAlignment="Stretch" SelectionChanged="listBoxPartners_SelectionChanged" >
+            --><!--Для рамки вокруг каждого элемента списка--><!--
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            --><!--Шаблон элемента списка--><!--
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <Grid HorizontalAlignment="Stretch" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        --><!--Левая часть - много текста--><!--
+                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                            <TextBlock FontSize="20">
+                                <Run Text="{Binding Path=PartnerType.PartnerTypeName}"/>
+                                <Run Text="|"/>
+                                <Run Text="{Binding Path=PartnerName}"/>
+                            </TextBlock>
+                            <TextBlock FontSize="14" Text="{Binding Path=PartnerDirector, StringFormat=Директор: {0}}"/>
+                            <TextBlock FontSize="14" Text="{Binding Path=PartnerPhone}"/>
+                            <TextBlock FontSize="14" Text="{Binding Path=PartnerRating, StringFormat=Рейтинг: {0}}"/>
+                        </StackPanel>
+                        --><!--Только одно число - скидка от продаж--><!--
+                        <TextBlock Grid.Column="1" Text="{Binding Path=PartnerDiscount, StringFormat={}{0}%}" FontSize="20"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+
+        <!--<ListView Name="listViewPartners" Grid.Row="1" Margin="10" SelectionMode="Single" HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Stretch" SelectionChanged="listBoxPartners_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Width="auto">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Stretch">
+                                        <TextBlock FontSize="20">
+                                        <Run Text="{Binding Path=PartnerType.PartnerTypeName}"/>
+                                        <Run Text="|"/>
+                                        <Run Text="{Binding Path=PartnerName}"/>
+                                        </TextBlock>
+                                        <TextBlock FontSize="14" Text="{Binding Path=PartnerDirector, StringFormat=Директор: {0}}"/>
+                                        <TextBlock FontSize="14" Text="{Binding Path=PartnerPhone}"/>
+                                        <TextBlock FontSize="14" Text="{Binding Path=PartnerRating, StringFormat=Рейтинг: {0}}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PartnerDiscount }" Width="auto"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>-->
+
+        <!--Для нижних кнопок-->
+        <UniformGrid Grid.Row="2" Columns="2">
+            <Button Name ="buttonAdd" Content="Добавить партнера" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" FontSize="20" Background="#FF67BA80" Click="buttonAdd_Click" />
+            <Button Name ="buttonHistory" Content="История реализаций партнера" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" FontSize="20" Background="#FF67BA80" />
+        </UniformGrid>
+    </Grid>
+</Window>

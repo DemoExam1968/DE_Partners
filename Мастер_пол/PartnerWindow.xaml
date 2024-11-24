@@ -1,0 +1,52 @@
+﻿<Window x:Class="Мастер_пол.PartnerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Мастер_пол"
+        mc:Ignorable="d"
+        Title="PartnerWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!--Заголовок-->
+        <Grid Grid.Row="0" Background="#FFF4E8D3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resources/Мастер пол.png" Stretch="Fill" />
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0" Text="Список партнеров" VerticalAlignment="Center" FontSize="20" />
+            <Button x:Name="buttonExit" Grid.Column="2" Content="Назад" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" FontSize="20" Click="buttonExit_Click" Background="#FF67BA80" />
+        </Grid>
+
+        <!--Список в центральной части-->
+        <UniformGrid Grid.Row="1" Columns="2" Rows="8">
+            <TextBlock Text="Тип партнера" HorizontalAlignment="Right" Margin="10"/>
+            <ComboBox Name="comboTypePartner"/>
+            <TextBlock Text="Название партнера" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxName" />
+            <TextBlock Text="ФИО директора" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxDir"/>
+            <TextBlock Text="Почта" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxEmail"/>
+            <TextBlock Text="Телефон" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxPhone"/>
+            <TextBlock Text="Адрес" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxAdress"/>
+            <TextBlock Text="ИНН" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxINN"/>
+            <TextBlock Text="Рейтинг" HorizontalAlignment="Right" Margin="10"/>
+            <TextBox x:Name="textBoxRating"/>
+        </UniformGrid>
+
+        <!--Для нижних кнопок-->
+        <Button Name ="buttonAdd" Grid.Row="2" Content="Фиксировать партнера" HorizontalAlignment="Stretch" Margin="100,10" VerticalAlignment="Stretch" FontSize="20" Background="#FF67BA80" Click="buttonAdd_Click" />
+    </Grid>
+</Window>

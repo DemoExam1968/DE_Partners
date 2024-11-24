@@ -1,0 +1,48 @@
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\Мастер_пол.exe.config
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\Мастер_пол.exe
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\Мастер_пол.pdb
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\App.g.cs
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол_Content.g.cs
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол_MarkupCompile.cache
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол_MarkupCompile.lref
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.g.resources
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.Properties.Resources.resources
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.csproj.CopyComplete
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.exe
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\Мастер_пол.pdb
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\Мастер_пол.exe.config
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\Мастер_пол.exe
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\Мастер_пол.pdb
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\App.g.cs
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол_Content.g.cs
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол_MarkupCompile.cache
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол_MarkupCompile.lref
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.g.resources
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.Properties.Resources.resources
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.csproj.CopyComplete
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.exe
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\Мастер_пол.pdb
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\PartnerWindow.g.cs
+C:\Users\user\Desktop\Мастер_пол — копия\Мастер_пол\obj\Debug\PartnerWindow.baml
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\PartnerWindow.g.cs
+C:\Users\user\Desktop\Мастер_пол\Мастер_пол\obj\Debug\PartnerWindow.baml

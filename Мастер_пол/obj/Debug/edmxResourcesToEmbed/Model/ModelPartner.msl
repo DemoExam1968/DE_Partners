@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище NSPartnerContainer" CdmEntityContainer="DBPartner">
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="NSPartner.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="MaterialTypeId" ColumnName="MaterialTypeId" />
+          <ScalarProperty Name="MaterialTypeName" ColumnName="MaterialTypeName" />
+          <ScalarProperty Name="MaterialTypeDefect" ColumnName="MaterialTypeDefect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner">
+      <EntityTypeMapping TypeName="NSPartner.Partner">
+        <MappingFragment StoreEntitySet="Partner">
+          <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+          <ScalarProperty Name="PartnerTypeId" ColumnName="PartnerTypeId" />
+          <ScalarProperty Name="PartnerName" ColumnName="PartnerName" />
+          <ScalarProperty Name="PartnerDirector" ColumnName="PartnerDirector" />
+          <ScalarProperty Name="PartnerEmail" ColumnName="PartnerEmail" />
+          <ScalarProperty Name="PartnerPhone" ColumnName="PartnerPhone" />
+          <ScalarProperty Name="PartnerAdress" ColumnName="PartnerAdress" />
+          <ScalarProperty Name="PartnerINN" ColumnName="PartnerINN" />
+          <ScalarProperty Name="PartnerRating" ColumnName="PartnerRating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerProduct">
+      <EntityTypeMapping TypeName="NSPartner.PartnerProduct">
+        <MappingFragment StoreEntitySet="PartnerProduct">
+          <ScalarProperty Name="PartnerProductId" ColumnName="PartnerProductId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+          <ScalarProperty Name="PartnerProductCount" ColumnName="PartnerProductCount" />
+          <ScalarProperty Name="PartnerProductDateSale" ColumnName="PartnerProductDateSale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerType">
+      <EntityTypeMapping TypeName="NSPartner.PartnerType">
+        <MappingFragment StoreEntitySet="PartnerType">
+          <ScalarProperty Name="PartnerTypeId" ColumnName="PartnerTypeId" />
+          <ScalarProperty Name="PartnerTypeName" ColumnName="PartnerTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="NSPartner.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductArticle" ColumnName="ProductArticle" />
+          <ScalarProperty Name="ProductMinCost" ColumnName="ProductMinCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="NSPartner.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="ProductTypeName" ColumnName="ProductTypeName" />
+          <ScalarProperty Name="ProductTypeRatio" ColumnName="ProductTypeRatio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
